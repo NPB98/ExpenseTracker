@@ -15,7 +15,7 @@ var email=document.getElementById('email');
           //console.log(response.data);
           alert(response.data.message);
           localStorage.setItem('token',response.data.token);
-          window.location.href="file:///E:/Little/Pr/Expense%20Tracker/expenseTracker.html";
+          window.location.href="file:///E:/Little/Pr/expenseTracker.html";
             
           }
       })
