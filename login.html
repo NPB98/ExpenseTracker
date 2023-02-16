@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Item Lister</title>
+</head>
+
+<body>
+    <div class="container">
+      <h1>Login</h1>
+    </div>
+  <div class="container">
+    <h2>Login Details</h2>
+    <form class="form-inline" id="addForm">
+        <label for="Email" class="form-label">Enter Your Email:</label> 
+        <input type="Email" id="email" class="form">
+        <label for="password" class="form-label">Enter Password:</label>
+        <input type="password" id="password" class="form"required>
+        <input type="submit" class="btn" value="Signup">
+    </form>
+    <a href="./signup.html">New User-Signup Now</a>
+    <button onclick ="forgotPassword()">Forgot password</button>
+    <ul id="users" class="list-group"></ul>
+   </div>
+  </div>
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <script src="./login.js">
+    
+</script>
+</body>
+</html>

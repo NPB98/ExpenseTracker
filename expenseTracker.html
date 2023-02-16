@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <title>Item Lister</title>
+</head>
+
+<body>
+    <div class="container">
+      <h1>ExpenseTracker</h1>
+    </div>
+  <div class="container">
+    <h2>Add Expense Details</h2>
+    <form class="form-inline" id="addForm">
+        <label for="Expense amonunt" class="form-label">Expense Amount :</label>
+            <input type="Expense amount" id="amount" class="form" required>
+        <label for="Description" class="form-label">Description :</label> 
+        <input type="Description" id="description" class="form" required>
+        <label for="category" class="form-label">Category :</label>
+        <select name="category" id="category" class="form" required>
+          <option value="food">Food</option>
+          <option value="petrol">Petrol</option>
+          <option value="salary">Salary</option>
+      <input type="submit" class="btn" value="Add Expense">
+    </form>
+    <button id="rzp-button1">Buy Premium</button>
+    <p id="premium"></p>
+    <h2 class="title">Expenses:</h2>
+    <ul id="items" class="list-group"></ul>
+   </div>
+   <div id='leaderboard'></div>
+  </div>
+  <div class="container" id="downloadFacility"></div>
+  <div class="container" ><ul id="getDownloads"></ul></div>
+  <div class="container" id="pagination">
+  <p>Expenses Per Page</p>
+          <form onsubmit="Helper(event)">
+          <input type="text" name="row" id="row">
+          <input type="submit" value="Enter rows per page">
+          </form>
+        </div>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <script src="expenseTracker.js"></script>
+  
+</body>
+</html>
